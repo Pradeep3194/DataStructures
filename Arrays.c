@@ -100,3 +100,18 @@ int delete(int a[], int pos, int top) {
     }
     return top-1;
 }
+
+/**
+*
+* Advantages:
+* Element Access - O(1)
+* Insert/Delete at End - O(1) amortized (starting address and element index)
+* Ease of Implementation.
+*
+* Disadvantages:
+* Memory Wastage - since array requires size to be declared.
+*                  some space will be left unused.
+* Delete/Insert At Pos - O(n)
+* If no contiguous memory is available, cannot use.
+* Extension of Array is not possible.
+**/
